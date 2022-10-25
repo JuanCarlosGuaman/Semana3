@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Label x:Name="lblusuario" Text="." HorizontalTextAlignment="End" FontSize="17" Background="#FFEBCD"/>
+                <Label x:Name="lblcontrasena" Text="." HorizontalTextAlignment="End" FontSize="17" Background="#FFEBCD"/>
+                <Label Text="Primer Parcial"
+            HorizontalOptions="CenterAndExpand" FontSize="Medium" Background="Yellow"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese su Nombre"/>
+            <Entry x:Name="txtApellido" Placeholder="Ingrese su Apellido"/>
+            <Entry x:Name="txtNota" Placeholder="Ingrese su Nota Seguimiento" Keyboard="Numeric" TextChanged="txtNota_TextChanged"/>
+            <Entry x:Name="txtNota2" Placeholder="Ingrese su Nota Examen 1" Keyboard="Numeric" TextChanged="txtNota2_TextChanged"/>
+            
+            <Button x:Name="btnInformacion" Text="Calcular Parcial 1" Clicked="btnInformacion_Clicked"/>
+
+            <Label Text="Segundo Parcial" Background="Yellow" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            
+            <Entry x:Name="txtNota3" Placeholder="Ingrese su Nota Seguimiento 2" Keyboard="Numeric" TextChanged="txtNota3_TextChanged"/>
+            <Entry x:Name="txtNota4" Placeholder="Ingrese su Nota Examen Final" Keyboard="Numeric" TextChanged="txtNota4_TextChanged"/>
+            <Button x:Name="btnInformacion2" Text="Calcular Parcial 2" Clicked="btnInformacion2_Clicked"/>
+            
+            <Label Text="Estado" Background="Yellow" HorizontalOptions="CenterAndExpand" FontSize="Medium"/>
+            <Button x:Name="btnInformacion3" Text="Verificar Estado" Clicked="btnInformacion3_Clicked"/>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
