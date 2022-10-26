@@ -20,8 +20,8 @@ namespace Semana2
         private async void btnIniciar_Clicked(object sender, EventArgs e)
         {
             //await Navigation.PushAsync(new Registro(txtUsuario.Text));
-            string usuario = "jguaman";
-            string contrasena = "123";
+            string usuario = "estudiante2022";
+            string contrasena = "uisrael2022";
 
             string tUsuario = txtUsuario.Text;
             string tContrasena = txtontrasena.Text;
